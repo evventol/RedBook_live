@@ -1,0 +1,11 @@
+.header {
+  font-size: 2rem;
+  padding: 2.5rem;
+  background: #EEEEEE;
+  box-shadow: 0rem 0.5rem 1rem rgba(0, 0, 0, 0.25);
+
+  & .name {
+    color: #CF202E;
+    font-weight: bold;
+  }
+}
