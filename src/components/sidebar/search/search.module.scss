@@ -1,0 +1,19 @@
+.search {
+  display: flex;
+
+  & input {
+      width: 295px;
+  height: 45px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px 0 0 8px;
+    padding: 0 7px;
+  }
+  & button {
+    width: 57px;
+    border: 1px solid #e0e0e0;
+    border-left: none;
+    border-radius: 0 8px 8px 0;
+    background: url('../../../img/mdi_search.svg') no-repeat center #fff;
+  }
+
+}
