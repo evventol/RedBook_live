@@ -3,6 +3,9 @@ import styles from './sidebar.module.scss'
 import Search from './search'
 import SelectTaxon from './selectTaxon'
 import SelectRegion from './selectRegion'
+import SelectOTG from './selectOTG'
+import SelectDataRegister from './selectDateRegister'
+import PositioningError from './positioningError'
 
 export default function Sidebar() {
   return (
@@ -11,6 +14,9 @@ export default function Sidebar() {
         <Search />
         <SelectTaxon />
         <SelectRegion />
+        <SelectOTG />
+        <SelectDataRegister />
+        <PositioningError />
       </form>
     </div>
   )

@@ -1,7 +1,94 @@
-.sidebar{
-    max-width: 410px;
-    //min-height: 300px;
-    padding: 20px 30px;
-    border: 1px solid #ccc;
+@import '../app.scss';
 
+.sidebar {
+  max-width: 410px;
+  padding: 20px 30px;
+  position: relative;
+}
+.sidebar:before {
+  position: absolute;
+  right: -26px;
+  content: '';
+  width: 26px;
+  height: 40px;
+  background: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-left: none;
+  border-radius: 0 8px 8px 0;
+}
+.sidebar:after {
+  position: absolute;
+  top: 36px;
+  right: -19px;
+  content: '';
+  width: 8px;
+  height: 8px;
+  background:transparent;
+  border-bottom: 2px solid $color-main;
+  border-left: 2px solid $color-main;
+  transform: rotate(45deg);
+}
+
+.h2 {
+  padding: 20px 0px 15px 0;
+  border-bottom: 1px solid #e0e0e0;
+  margin: 0;
+  position: relative;
+  font-weight: normal;
+  font-size: 16px;
+}
+.h2:after {
+  display: inline-block;
+  content: '';
+  margin-right: 10px;
+  border-right: 6px solid transparent;
+  border-left: 6px solid transparent;
+  border-top: 8px solid $color-main;
+  position: absolute;
+  right: 0;
+  bottom: 15px;
+}
+.fieldset {
+  width: 100%;
+  border: none;
+  padding-left: 0;
+  padding-right: 0;
+  border-bottom: 1px solid #e0e0e0;
+
+  & .legend {
+    padding-top: 14px;
+  }
+  & .legend:before {
+    display: inline-flex;
+    content: '';
+    width: 7px;
+    height: 7px;
+    margin-right: 10px;
+    border-right: 2px solid $color-main;
+    border-top: 2px solid $color-main;
+    transform: rotate(45deg);
+  }
+}
+.inputCheckbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.inputCheckbox + .labelCheckbox {
+  display: inline-flex;
+  align-items: center;
+  font-size: 1.4rem;
+  color: #4f4f4f;
+  user-select: none;
+}
+.inputCheckbox + .labelCheckbox:before {
+  content: '';
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  border: 2px solid $color-main;
+  margin-right: 14px;
+}
+.inputCheckbox:checked + .labelCheckbox:before {
+  background: url('../../img/checked_icon.svg') no-repeat center;
 }

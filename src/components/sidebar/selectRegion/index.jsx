@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './selectRegion.module.scss'
 
-export default function SelectRegion() {
+ const SelectRegion = () => {
   return (
     <div className={styles.selectRegion}>
       <h2 className={styles.h2}>Регіон</h2>
@@ -21,3 +21,5 @@ export default function SelectRegion() {
     </div>
   )
 }
+
+export default SelectRegion
