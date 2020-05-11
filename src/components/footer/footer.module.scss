@@ -1,0 +1,53 @@
+
+.footer {
+    max-width: 192rem;
+    background: #00C48C;
+    padding: 2.5rem;
+    display: flex;
+    justify-content: space-around;
+    
+    & .name__with__copyright {
+        & .name {
+            font-family: 'Prompt', sans-serif;
+            font-size: 2.34rem;
+            line-height: 3rem;
+            color: #FFFFFF;    
+        }
+        & .copyright {
+            display: flex;
+            align-items: center;
+            & .logo {
+                width: 1.8rem;
+                margin: 1rem;
+            }
+            & .text {
+            font-family: 'PT Sans', sans-serif;
+            font-size: 1.2rem;
+            line-height: 1.6rem;
+            color: #FFFFFF;
+            }
+        }
+    }
+
+    & .navigation {
+        display: flex;
+        justify-content: space-around;
+        width: 50rem;
+        & .tab {
+          font-family: 'PT Sans', sans-serif;
+          font-size: 1.5rem;
+          line-height: 2.3rem;
+          color: #FFFFFF;    
+        }
+    }
+
+    & .social__net {
+        display: flex;
+        justify-content: space-around;
+        width: 10rem;
+        & .logo {
+            width: 3.4rem;
+            margin: 1rem;
+        }
+    }
+}
