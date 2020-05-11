@@ -4,12 +4,14 @@ import BaseLayers from './baseLayers'
 import Biodiversity from './biodiversity'
 import OpenSpatialBases from './openSpatialBases'
 
-const Aside = () => {
+const Aside = (props) => {
   return (
     <aside className={styles.aside}>
-      <BaseLayers />
-      <Biodiversity />
-      <OpenSpatialBases/>
+      <BaseLayers baseLayersData={props.baseLayersData} />
+
+      <Biodiversity biodiversityData={props.biodiversityData} />
+
+      <OpenSpatialBases openSpatialBasesData={props.openSpatialBasesData} />
     </aside>
   )
 }

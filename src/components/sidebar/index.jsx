@@ -7,16 +7,16 @@ import SelectOTG from './selectOTG'
 import SelectDataRegister from './selectDateRegister'
 import PositioningError from './positioningError'
 
-export default function Sidebar() {
+export default function Sidebar(props) {
   return (
     <div className={styles.sidebar}>
       <form>
         <Search />
-        <SelectTaxon />
+        <SelectTaxon selectTaxonData={props.selectTaxonData} />
         <SelectRegion />
         <SelectOTG />
         <SelectDataRegister />
-        <PositioningError />
+        <PositioningError positioningErrorData={props.positioningErrorData} />
       </form>
     </div>
   )

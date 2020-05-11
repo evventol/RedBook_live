@@ -1,10 +1,9 @@
 @import '../sidebar.module.scss';
 
-.dataRegister{
+.dataRegister {
   margin-top: 18px;
-border-bottom: 1px solid #e0e0e0;
-border-top: 1px solid #e0e0e0;
-
+  border-bottom: 1px solid #e0e0e0;
+  border-top: 1px solid #e0e0e0;
 }
 
 .inputRange[type='range'] {
@@ -55,5 +54,4 @@ border-top: 1px solid #e0e0e0;
     right: -40%;
     bottom: 19px;
   }
-
 }
