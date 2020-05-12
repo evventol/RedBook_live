@@ -14,7 +14,6 @@ const App = (props) => {
           selectTaxonData={props.state.sidebar.selectTaxonData}
           positioningErrorData={props.state.sidebar.positioningErrorData}
         />
-
         <Aside
           baseLayersData={props.state.aside.baseLayersData}
           biodiversityData={props.state.aside.biodiversityData}

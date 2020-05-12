@@ -1,3 +1,11 @@
-@import '../sidebar.module.scss';
 @import '../../app.scss';
+@import '../sidebar.module.scss';
 
+.h2 {
+  margin-top: 10px;
+}
+.fieldset {
+  .legendTaxon {
+    padding-top: 0;
+  }
+}

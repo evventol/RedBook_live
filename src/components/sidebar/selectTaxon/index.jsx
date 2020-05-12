@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '../sidebar.module.scss'
+import styles from './selectTaxon.module.scss'
 import ImputCheckbox from '../../sidebar/imputCheckbox'
 
 const SelectTaxon = (props) => {
@@ -12,7 +12,7 @@ const SelectTaxon = (props) => {
       <fieldset className={styles.fieldset}>
         <legend className={styles.legend}>Охоронний статус</legend>
         {selectTaxonCheckbox}
-        <legend className={styles.legend}>Джерело даних</legend>
+        <legend className={styles.legend + ' ' + styles.legendTaxon}>Джерело даних</legend>
       </fieldset>
     </div>
   )

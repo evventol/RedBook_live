@@ -6,35 +6,35 @@
   border-top: 1px solid #e0e0e0;
 }
 
-.inputRange[type='range'] {
-  -webkit-appearance: none;
-  margin: 26px 0;
-  width: 100%;
-}
+// .inputRange[type='range'] {
+//   -webkit-appearance: none;
+//   margin: 26px 0;
+//   width: 100%;
+// }
 
-.inputRange[type='range']::-webkit-slider-runnable-track {
-  width: 100%;
-  height: 3px;
-  cursor: pointer;
-  background: #c4c4c4;
-}
-.inputRange[type='range']::-webkit-slider-thumb {
-  box-shadow: 0px 3px 5px #c0c0c0;
-  height: 28px;
-  width: 28px;
-  border-radius: 50%;
-  border: 2px solid $color-main;
-  background: #fff;
-  cursor: pointer;
-  -webkit-appearance: none;
-  margin-top: -13px;
-}
+// .inputRange[type='range']::-webkit-slider-runnable-track {
+//   width: 100%;
+//   height: 3px;
+//   cursor: pointer;
+//   background: #c4c4c4;
+// }
+// .inputRange[type='range']::-webkit-slider-thumb {
+//   box-shadow: 0px 3px 5px #c0c0c0;
+//   height: 28px;
+//   width: 28px;
+//   border-radius: 50%;
+//   border: 2px solid $color-main;
+//   background: #fff;
+//   cursor: pointer;
+//   -webkit-appearance: none;
+//   margin-top: -13px;
+// }
 
 .countYear {
   display: flex;
   justify-content: space-around;
   text-align: center;
-  margin-top: 20px;
+  margin: 20px 0;
   & .span {
     width: 110px;
     height: 39px;
