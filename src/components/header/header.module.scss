@@ -23,61 +23,62 @@
     }
   }
   & .navigation {
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: space-around;
     width: 50rem;
     & .tab {
+      list-style-type: none;
       font-family: 'PT Sans', sans-serif;
       font-size: 1.5rem;
       line-height: 2.3rem;
-      color: #000000;
-    }
-    & .change__lang {
-      display: flex;
-      justify-content: space-around;
-      width: 7.5rem;
-      & .flag {
-        height: 0.7rem;
-        width: 1.8rem;
+      color: #030101;
+      & .language {
+        display: flex;
+        justify-content: center;
+        width: 9rem;
+        & .flag {
+          margin-right: 1rem;
+          height: 0.7rem;
+          width: 1.8rem;
         }
-      & .tab {
-        font-family: 'PT Sans', sans-serif;
-        font-size: 1.6rem;
-        line-height: 2.1rem;
-        text-transform: uppercase;
-        color: #000000;
+        & .tab {
+          font-family: 'PT Sans', sans-serif;
+          font-size: 1.6rem;
+          line-height: 2.1rem;
+          text-transform: uppercase;
+          color: #000000;
+        }
       }
     }
-  }
-}
-
-.list__lang {
-  position: absolute;
-  width: 9rem;
-  height: 18.2rem;
-  left: 101.7rem;
-  top: 4.8rem;
-  background: #FFFFFF;
-  box-shadow: 0rem 0.1rem 0.8rem rgba(0, 0, 0, 0.08);
-  border-radius: 0.8rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  & .language {
-    display: flex;
-    justify-content: space-around;
-    width: 6rem;
-    & .flag {
-      height: 0.7rem;
-      width: 1.8rem;
-     }
-    & .tab {
-      font-family: 'PT Sans', sans-serif;
-      font-size: 1.6rem;
-      line-height: 2.1rem;
-      text-transform: uppercase;
-      color: #000000;
+    & .change__lang {
+      position: absolute;
+      margin: 0;
+      padding: 0.5rem 0 0.5rem 0;
+      height: 16rem;
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+      background: #FFFFFF;
+      box-shadow: 0 0.1rem 0.8rem rgba(0, 0, 0, 0.08);
+      border-radius: 0.8rem;
+      & .language {
+        list-style-type: none;
+        width: 8rem;
+        & .flag {
+          height: 0.7rem;
+          width: 1.8rem;
+          margin-right: 1rem;
+        }
+        & .tab {
+          font-family: 'PT Sans', sans-serif;
+          font-size: 1.6rem;
+          line-height: 2.1rem;
+          text-transform: uppercase;
+          color: #000000;
+        }
+      }
     }
   }
 }

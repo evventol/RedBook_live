@@ -30,17 +30,20 @@
     }
 
     & .navigation {
+        margin: 0;
+        padding: 0;
         display: flex;
         justify-content: space-around;
         width: 50rem;
         & .tab {
+          list-style-type: none;
           font-family: 'PT Sans', sans-serif;
           font-size: 1.5rem;
           line-height: 2.3rem;
-          color: #FFFFFF;    
+          color: #FFFFFF;
         }
     }
-
+    
     & .social__net {
         display: flex;
         justify-content: space-around;
