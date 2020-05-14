@@ -1,8 +1,8 @@
-import React from 'react'
-import styles from './aside.module.scss'
-import BaseLayers from './baseLayers'
-import Biodiversity from './biodiversity'
-import OpenSpatialBases from './openSpatialBases'
+import React from "react";
+import styles from "./aside.module.scss";
+import BaseLayers from "./baseLayers";
+import Biodiversity from "./biodiversity";
+import OpenSpatialBases from "./openSpatialBases";
 
 const Aside = (props) => {
   return (
@@ -13,7 +13,7 @@ const Aside = (props) => {
 
       <OpenSpatialBases openSpatialBasesData={props.openSpatialBasesData} />
     </aside>
-  )
-}
+  );
+};
 
-export default Aside
+export default Aside;

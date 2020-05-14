@@ -1,11 +1,11 @@
-import React from 'react'
-import './app.scss'
-import { Header } from './header'
-import Sidebar from './sidebar'
+import React from "react";
+import "./app.scss";
+import { Header } from "./header";
+import Sidebar from "./sidebar";
 // import Aside from './aside'
-import './app.scss'
-import { Footer } from './footer'
-import { MainRouter } from './main-router'
+import "./app.scss";
+import { Footer } from "./footer";
+import { MainRouter } from "./main-router";
 
 const App = (props) => {
   return (
@@ -27,7 +27,7 @@ const App = (props) => {
       </main>
       <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;

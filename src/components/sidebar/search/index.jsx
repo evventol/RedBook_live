@@ -1,5 +1,5 @@
-import React from 'react'
-import styles from './search.module.scss'
+import React from "react";
+import styles from "./search.module.scss";
 
 const Search = () => {
   return (
@@ -7,6 +7,6 @@ const Search = () => {
       <input type="search" placeholder="Введіть назву виду" />
       <button type="submit"></button>
     </div>
-  )
-}
-export default Search
+  );
+};
+export default Search;

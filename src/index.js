@@ -1,12 +1,10 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import App from './components/app'
-import { Provider } from 'react-redux'
-import { Store } from './store'
-import state from './state'
-import {
-  BrowserRouter as Router,
-} from "react-router-dom";
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./components/app";
+import { Provider } from "react-redux";
+import { Store } from "./store";
+import state from "./state";
+import { BrowserRouter as Router } from "react-router-dom";
 
 ReactDOM.render(
   <Provider store={Store}>
@@ -14,5 +12,5 @@ ReactDOM.render(
       <App state={state} />
     </Router>
   </Provider>,
-  document.getElementById('root'),
-)
+  document.getElementById("root")
+);

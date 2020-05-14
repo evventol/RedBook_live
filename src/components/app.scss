@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 //переменные цвета
 $color-main: #00c48c;
@@ -14,7 +14,7 @@ html {
   font-size: 62.5%;
 }
 
-input[type='range']:focus {
+input[type="range"]:focus {
   outline: none;
 }
 
@@ -22,7 +22,7 @@ body {
   padding: 0;
   margin: 0;
   font-size: 1.6rem;
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
   overflow: hidden;
 }
 
