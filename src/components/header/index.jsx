@@ -2,9 +2,10 @@ import React from 'react';
 import styles from './header.module.scss';
 import { headerConfig } from './header.config';
 import LanguageDropdown from './language-dropdown/language-dropdown';
+import { NavbarLink } from '../navbar-item';
 
 export const Header = () => {
-  const renderTabs = () => headerConfig.tabs.map(el => <li className={styles.tab}>{el.tabName}</li>);
+  const renderTabs = () => headerConfig.tabs.map(el => <NavbarLink {...el}/>);
 
   return (
     <header className={styles.header}>
@@ -14,12 +15,10 @@ export const Header = () => {
         </span>
         Book live
       </span>
-      <nav>
-        <ul className={styles.navigation}>
-          {renderTabs()}
-          <LanguageDropdown />
-        </ul>
-      </nav>
+      <ul className={styles.navigation}>
+        {renderTabs()}
+        <LanguageDropdown />
+      </ul>
     </header>
   )
 }
