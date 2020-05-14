@@ -23,11 +23,13 @@ body {
   margin: 0;
   font-size: 1.6rem;
   font-family: 'PT Sans', sans-serif;
+  overflow: hidden;
 }
 
 .main {
   display: flex;
   justify-content: space-between;
+  position: relative;
   height: calc(100vh - 19rem);
 }
 

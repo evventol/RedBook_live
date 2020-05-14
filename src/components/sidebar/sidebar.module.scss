@@ -1,17 +1,55 @@
 @import '../app.scss';
 
 .sidebar {
-  position: relative;
-  padding: 2rem 3rem;
-  position: relative;
+  position: absolute;
   min-width: max-content;
   height: 100%;
   border-right: 0.1rem solid #E0E0E0;
-  overflow-y: auto;
   transform: translateX(-100%);
+  transition: all 0.3s;
+  background-color: white;
+  z-index: 0;
   
   &.opened {
     transform: translateX(0%);
+  }
+
+  & .toggler {
+    position: absolute;
+    right: -2rem;
+    top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 4.5rem;
+    border-top-right-radius: 0.8rem;
+    border-bottom-right-radius: 0.8rem;
+    outline: none;
+    border: 0.1rem solid #E0E0E0;
+    border-left: none;
+    transition: all 0.2s;
+
+    &:hover {
+      right: -2.5rem;
+      width: 2.5rem;
+    }
+
+    & .arrow {
+      transform: rotate(180deg);
+      transition: all 0.2s;
+
+      &.closed {
+        transform: rotate(0deg);
+      }
+    }
+  }
+
+  & .content {
+    padding: 2rem 3rem;
+    min-width: max-content;
+    height: 100%;
+    overflow-y: auto;
   }
 }
 
