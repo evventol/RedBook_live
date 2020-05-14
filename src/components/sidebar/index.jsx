@@ -12,10 +12,10 @@ export default function Sidebar(props) {
   const [isOpened, toggleSidebar] = useState(false);
 
   return (
-    <div className={[styles.sidebar, !isOpened ? styles.opened : ""].join(" ")}>
+    <div className={[styles.sidebar, isOpened ? styles.opened : ""].join(" ")}>
       <div className={styles.toggler} onClick={() => toggleSidebar(!isOpened)}>
         <img
-          className={[styles.arrow, !isOpened ? "" : styles.closed].join(" ")}
+          className={[styles.arrow, isOpened ? "" : styles.closed].join(" ")}
           src={arrow}
           alt="toggler"
         />
