@@ -5,16 +5,21 @@ let state = {
         id: 'red-book-ukraine',
         htmlFor: 'red-book-ukraine',
         title: 'Червона Книга України',
+        value: '1'
       },
       {
         id: 'red-list',
         htmlFor: 'red-list',
         title: 'Червоний список МСОП',
+        value: '2'
+
       },
       {
         id: 'no-data',
         htmlFor: 'no-data',
         title: 'Немає даних',
+        value: '3'
+
       },
     ],
 

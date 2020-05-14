@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from '../../aside/aside.module.scss'
 
-const ImputCheckbox = (props) => {
+const InputCheckbox = (props) => {
   return (
     <p>
       <input
@@ -9,7 +9,6 @@ const ImputCheckbox = (props) => {
         id={props.id}
         type="checkbox"
         name="option"
-        value=""
       />
       <label className={styles.labelCheckbox} htmlFor={props.htmlFor}>
         {props.title}
@@ -18,4 +17,4 @@ const ImputCheckbox = (props) => {
   )
 }
 
-export default ImputCheckbox
+export default InputCheckbox

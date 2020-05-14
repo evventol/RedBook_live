@@ -2,10 +2,15 @@
 @import '../sidebar.module.scss';
 
 .h2 {
-  margin-top: 10px;
+  margin-top: 1rem;
 }
 .fieldset {
+    display: none;
   .legendTaxon {
     padding-top: 0;
   }
+}
+
+.fieldsetActive{
+    display: block;
 }

@@ -1,10 +1,10 @@
 import React from 'react'
 import styles from '../aside.module.scss'
-import ImputCheckbox from '../../sidebar/imputCheckbox'
+import InputCheckbox from '../../sidebar/inputCheckbox'
 
 const Biodiversity = (props) => {
   let biodiversityCheckbox = props.biodiversityData.map((input) => (
-    <ImputCheckbox id={input.id} htmlFor={input.htmlFor} title={input.title} />
+    <InputCheckbox id={input.id} htmlFor={input.htmlFor} title={input.title} />
   ))
   return (
     <>

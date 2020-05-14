@@ -1,71 +1,71 @@
 @import '../app.scss';
 
 .sidebar {
-  max-width: 410px;
-  padding: 20px 30px;
+  max-width: 41rem;
+  padding: 2rem 3rem;
   position: relative;
 }
 .sidebar:before {
   position: absolute;
-  right: -26px;
+  right: -2.6rem;
   content: '';
-  width: 26px;
-  height: 40px;
+  width: 2.6rem;
+  height: 4rem;
   background: #f9f9f9;
-  border: 1px solid #e0e0e0;
+  border: .1rem solid #e0e0e0;
   border-left: none;
-  border-radius: 0 8px 8px 0;
+  border-radius: 0 .8rem .8rem 0;
 }
 .sidebar:after {
   position: absolute;
-  top: 36px;
-  right: -19px;
+  top: 3.6rem;
+  right: -1.9rem;
   content: '';
-  width: 8px;
-  height: 8px;
+  width: .8rem;
+  height: .8rem;
   background: transparent;
-  border-bottom: 2px solid $color-main;
-  border-left: 2px solid $color-main;
+  border-bottom: .2rem solid $color-main;
+  border-left: .2rem solid $color-main;
   transform: rotate(45deg);
 }
 
 .h2 {
-  padding: 9px 0;
-  border-bottom: 1px solid #e0e0e0;
+  padding: .9rem 0;
+  border-bottom: .1rem solid #e0e0e0;
   margin: 0;
   position: relative;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 1.6rem;
 }
 .h2:after {
   display: inline-block;
   content: '';
-  margin-right: 10px;
-  border-right: 6px solid transparent;
-  border-left: 6px solid transparent;
-  border-top: 8px solid $color-main;
+  margin-right: 1rem;
+  border-right: .6rem solid transparent;
+  border-left: .6rem solid transparent;
+  border-top: .8rem solid $color-main;
   position: absolute;
   right: 0;
-  bottom: 15px;
+  bottom: 1.5rem;
 }
 .fieldset {
   width: 100%;
   border: none;
   padding-left: 0;
   padding-right: 0;
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: .1rem solid #e0e0e0;
 
   & .legend {
-    padding-top: 14px;
+    padding-top: 1.4rem;
   }
   & .legend:before {
     display: inline-flex;
     content: '';
-    width: 7px;
-    height: 7px;
-    margin-right: 10px;
-    border-right: 2px solid $color-main;
-    border-top: 2px solid $color-main;
+    width: .7rem;
+    height: .7rem;
+    margin-right: 1rem;
+    border-right: .2rem solid $color-main;
+    border-top: .2rem solid $color-main;
     transform: rotate(45deg);
   }
 }
@@ -84,10 +84,10 @@
 .inputCheckbox + .labelCheckbox:before {
   content: '';
   display: inline-block;
-  width: 11px;
-  height: 11px;
-  border: 2px solid $color-main;
-  margin-right: 14px;
+  width: 1.3rem;
+  height: 1.3rem;
+  border: .2rem solid $color-main;
+  margin-right: 1.4rem;
 }
 .inputCheckbox:checked + .labelCheckbox:before {
   background: url('../../img/checked_icon.svg') no-repeat center;

@@ -1,46 +1,19 @@
 @import '../sidebar.module.scss';
 
 .dataRegister {
-  margin-top: 18px;
-  border-bottom: 1px solid #e0e0e0;
-  border-top: 1px solid #e0e0e0;
+  border-bottom: .1rem solid #e0e0e0;
 }
-
-// .inputRange[type='range'] {
-//   -webkit-appearance: none;
-//   margin: 26px 0;
-//   width: 100%;
-// }
-
-// .inputRange[type='range']::-webkit-slider-runnable-track {
-//   width: 100%;
-//   height: 3px;
-//   cursor: pointer;
-//   background: #c4c4c4;
-// }
-// .inputRange[type='range']::-webkit-slider-thumb {
-//   box-shadow: 0px 3px 5px #c0c0c0;
-//   height: 28px;
-//   width: 28px;
-//   border-radius: 50%;
-//   border: 2px solid $color-main;
-//   background: #fff;
-//   cursor: pointer;
-//   -webkit-appearance: none;
-//   margin-top: -13px;
-// }
-
 .countYear {
   display: flex;
   justify-content: space-around;
   text-align: center;
-  margin: 20px 0;
+  margin: 2.0rem 0;
   & .span {
-    width: 110px;
-    height: 39px;
-    border: 1px solid #e0e0e0;
-    padding: 9px 0;
-    font-size: 15px;
+    width: 11.0rem;
+    height: 3.9rem;
+    border: .1rem solid #e0e0e0;
+    padding: .9rem 0;
+    font-size: 1.5rem;
     color: #4f4f4f;
     position: relative;
   }
@@ -48,10 +21,10 @@
     display: block;
     position: absolute;
     content: '';
-    width: 18px;
-    height: 1px;
+    width: 1.8rem;
+    height: .1rem;
     background-color: #e0e0e0;
     right: -40%;
-    bottom: 19px;
+    bottom: 1.9rem;
   }
 }

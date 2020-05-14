@@ -1,10 +1,10 @@
 import React from 'react'
 import styles from '../aside.module.scss'
-import ImputCheckbox from '../../sidebar/imputCheckbox'
+import InputCheckbox from '../../sidebar/inputCheckbox'
 
 const OpenSpatialBases = (props) => {
   let openSpatialBasesCheckbox = props.openSpatialBasesData.map((input) => (
-    <ImputCheckbox id={input.id} htmlFor={input.htmlFor} title={input.title} />
+    <InputCheckbox id={input.id} htmlFor={input.htmlFor} title={input.title} />
   ))
   return (
     <>
