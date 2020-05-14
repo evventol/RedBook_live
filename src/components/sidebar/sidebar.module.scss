@@ -1,33 +1,17 @@
 @import '../app.scss';
 
 .sidebar {
-  max-width: 41rem;
+  position: relative;
+  height: calc(100vh - 19rem);
   padding: 2rem 3rem;
   position: relative;
   border-right: 0.1rem solid #E0E0E0;
-}
-.sidebar:before {
-  position: absolute;
-  right: -2.6rem;
-  content: '';
-  width: 2.6rem;
-  height: 4rem;
-  background: #f9f9f9;
-  border: .1rem solid #e0e0e0;
-  border-left: none;
-  border-radius: 0 .8rem .8rem 0;
-}
-.sidebar:after {
-  position: absolute;
-  top: 3.6rem;
-  right: -1.9rem;
-  content: '';
-  width: .8rem;
-  height: .8rem;
-  background: transparent;
-  border-bottom: .2rem solid $color-main;
-  border-left: .2rem solid $color-main;
-  transform: rotate(45deg);
+  overflow-y: auto;
+  transform: translateX(-100%);
+  
+  &.opened {
+    transform: translateX(0%);
+  }
 }
 
 .h2 {
