@@ -4,23 +4,29 @@ import ge from '../../img/georgia.svg';
 import md from '../../img/moldova.svg';
 import by from '../../img/belarus.svg';
 import bg from '../../img/bulgaria.svg';
+import { routes } from '../../constants/routes/routes';
 
 export const headerConfig = {
   tabs: [
     {
-      tabName: 'Про Нас'
+      tabName: 'Про Нас',
+      to: routes.about
     },
     {
-      tabName: 'Проект'
+      tabName: 'Проект',
+      to: routes.project
     },
     {
-      tabName: 'Організації'
+      tabName: 'Організації',
+      to: routes.organisations
     },
     {
-      tabName: 'Важливі Ділянки'
+      tabName: 'Важливі Ділянки',
+      to: routes.places
     },
     {
-      tabName: 'Контакти'
+      tabName: 'Контакти',
+      to: routes.contacts
     },
   ],
   langDropdown: [

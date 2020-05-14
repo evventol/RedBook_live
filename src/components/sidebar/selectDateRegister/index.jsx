@@ -83,10 +83,10 @@ const SelectDataRegister = (props) => {
           </div>
           <div className={styles.countYear}>
             <span className={styles.countYearStart + ' ' + styles.span}>
-              1950 рік
+              {value[0]} рік
             </span>
             <span className={styles.span + ' ' + styles.countYearEnd}>
-              2015 рік
+              {value[1]} рік
             </span>
 
 
