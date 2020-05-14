@@ -1,58 +1,35 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styles from './selectTaxon.module.scss'
+import InputCheckbox from '../inputCheckbox'
 
-class SelectTaxon extends React.Component {
 
-  render() {
-    return (
-      <div className={styles.taxon}>
-        <h2 className={styles.h2}>Назва Таксону</h2>
-        <fieldset className={styles.fieldset}>
+const SelectTaxon = (props) => {
+  const [isShown, setIsShown] = useState(true);
+
+  const toggleFIeldset = () => setIsShown(!isShown);
+
+  let selectTaxonCheckbox = props.selectTaxonData.map((input) => (
+    <InputCheckbox
+      id={input.id}
+      htmlFor={input.htmlFor}
+      title={input.title} />
+  ))
+
+
+  return (
+    <div className={styles.taxon}>
+      <h2 className={styles.h2} onClick={toggleFIeldset}>Назва Таксону</h2>
+      {isShown &&
+        <fieldset className={styles.fieldset + ' ' + styles.fieldsetActive}>
           <legend className={styles.legend}>Охоронний статус</legend>
-          <p>
-            <input
-              className={styles.input}
-              id="red-book-ukraine"
-              type="checkbox"
-              name="option"
-              value=""
-            />
-            <label className={styles.label} htmlFor="red-book-ukraine">
-            Червона Книга України
-            </label>
-          </p>
-
-          <p>
-            <input
-              className={styles.input}
-              id="red-list"
-              type="checkbox"
-              name="option"
-              value=""
-            />
-            <label className={styles.label} htmlFor="red-list">
-            Червоний список МСОП
-            </label>
-          </p>
-
-          <p>
-            <input
-              className={styles.input}
-              id="no-data"
-              type="checkbox"
-              name="option"
-              value=""
-            />
-            <label className={styles.label} htmlFor="no-data">
-            Немає даних
-            </label>
-          </p>
-          <legend className={styles.legend}>Джерело даних</legend>
-
+          {selectTaxonCheckbox}
+          <legend className={styles.legend + ' ' + styles.legendTaxon}>
+            Джерело даних
+          </legend>
         </fieldset>
-      </div>
-    )
-  }
+      }
+    </div>
+  )
 }
 
 export default SelectTaxon
