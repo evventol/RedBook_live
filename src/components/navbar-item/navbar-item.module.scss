@@ -1,7 +1,7 @@
 .container {
   list-style-type: none;
   height: 100%;
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 1.5rem;
   line-height: 2.3rem;
 
@@ -18,7 +18,7 @@
 
     &.active {
       background-color: rgba(0, 196, 141, 0.1);
-      border-bottom: 0.4rem solid #00C48C;
+      border-bottom: 0.4rem solid #00c48c;
     }
   }
 }

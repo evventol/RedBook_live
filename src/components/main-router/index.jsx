@@ -1,13 +1,13 @@
-import React from 'react'
-import { Switch, Route, Redirect } from 'react-router-dom'
-import { routes } from '../../constants/routes/routes'
+import React from "react";
+import { Switch, Route, Redirect } from "react-router-dom";
+import { routes } from "../../constants/routes/routes";
 
 export const MainRouter = () => {
   return (
-    <React.Fragment>  
-      <Redirect from='/' to={routes.about}/>
+    <React.Fragment>
+      <Redirect from="/" to={routes.about} />
       <Switch>
-        <Route  path={routes.about}>
+        <Route path={routes.about}>
           <div>About</div>
         </Route>
         <Route path={routes.project}>
@@ -24,5 +24,5 @@ export const MainRouter = () => {
         </Route>
       </Switch>
     </React.Fragment>
-  )
-}
+  );
+};
