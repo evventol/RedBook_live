@@ -4,6 +4,7 @@ import { Header } from './header'
 import Sidebar from './sidebar'
 import Aside from './aside'
 import './app.scss'
+import { Footer } from './footer'
 
 const App = (props) => {
   return (
@@ -14,12 +15,13 @@ const App = (props) => {
           selectTaxonData={props.state.sidebar.selectTaxonData}
           positioningErrorData={props.state.sidebar.positioningErrorData}
         />
-        <Aside
+        {/* <Aside
           baseLayersData={props.state.aside.baseLayersData}
           biodiversityData={props.state.aside.biodiversityData}
           openSpatialBasesData={props.state.aside.openSpatialBasesData}
-        />
+        /> */}
       </main>
+      <Footer />
     </div>
   )
 }
