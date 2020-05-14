@@ -20,12 +20,12 @@ body {
   padding: 0;
   margin: 0;
   font-size: 1.6rem;
-
   font-family: 'PT Sans', sans-serif;
 }
 .main {
   display: flex;
   justify-content: space-between;
+  height: calc(100vh - 19rem);
 }
 
 .App {
