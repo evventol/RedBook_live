@@ -4,7 +4,7 @@ import InputCheckbox from '../inputCheckbox'
 
 
 const SelectTaxon = (props) => {
-  const [isShown, setIsShown] = useState(true);
+  const [isShown, setIsShown] = useState(false);
 
   const toggleFIeldset = () => setIsShown(!isShown);
 

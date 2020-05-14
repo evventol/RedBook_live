@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import styles from './selectRegion.module.scss'
 
 const SelectRegion = (props) => {
-  const [isShown, setIsShown] = useState(true);
+  const [isShown, setIsShown] = useState(false);
 
   const toggleFIeldset = () => setIsShown(!isShown);
   return (

@@ -6,20 +6,13 @@ import Aside from './aside'
 import './app.scss'
 import { Footer } from './footer'
 
-const App = (props) => {
+const App = () => {
   return (
     <div className="App">
       <Header />
       <main className="main">
-        <Sidebar
-          selectTaxonData={props.state.sidebar.selectTaxonData}
-          positioningErrorData={props.state.sidebar.positioningErrorData}
-        />
-        {/* <Aside
-          baseLayersData={props.state.aside.baseLayersData}
-          biodiversityData={props.state.aside.biodiversityData}
-          openSpatialBasesData={props.state.aside.openSpatialBasesData}
-        /> */}
+        <Sidebar />
+        {/* <Aside /> */}
       </main>
       <Footer />
     </div>
