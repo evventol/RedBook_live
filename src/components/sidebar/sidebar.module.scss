@@ -2,9 +2,9 @@
 
 .sidebar {
   position: relative;
-  height: calc(100vh - 19rem);
   padding: 2rem 3rem;
   position: relative;
+  height: 100%;
   border-right: 0.1rem solid #E0E0E0;
   overflow-y: auto;
   transform: translateX(-100%);

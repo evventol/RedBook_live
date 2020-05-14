@@ -12,7 +12,7 @@ export default class LanguageDropdown extends Component {
 
   toggleDropdown = () => this.setState({isOpened: !this.state.isOpened})
 
-  onRowSelect = (selectedLang) => this.setState({selectedLang: selectedLang.toUpperCase()})
+  onRowSelect = (selectedLang) => this.setState({selectedLang: selectedLang.toUpperCase(), isOpened: false})
 
   renderDropdown = () => {
     const {selectedLang} = this.state;
