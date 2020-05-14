@@ -25,5 +25,11 @@ body {
 }
 .main {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  max-width: 192rem;
 }
