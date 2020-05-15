@@ -1,26 +1,29 @@
-// .aboutDataUkrain {
-//   // width: 100%;
-//   display: flex;
-//   justify-content: space-around;
-//   flex-wrap: wrap;
-//   font-size: 1.8rem;
-//   color: #000000;
-//   border: 0.1rem solid #f9f9f9;
-//   padding: 4.2rem 0;
-// }
-// .title {
-//   // width: 100%;
-//   & .h2 {
-//     display: flex;
-//     justify-content: flex-start;
-//     font-weight: bold;
-//     font-size: 2rem;
-//     margin-bottom: 1rem;
-//     margin: 0;
-//   }
-//   & .h3 {
-//     color: #00c48c;
-//     font-size: 1.8rem;
-//     margin-top: 0.6rem;
-//   }
-// }
+.aboutDataUkrain {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  font-size: 1.8rem;
+  color: #000000;
+  border: 0.1rem solid #f9f9f9;
+  padding: 4.2rem 0;
+  max-width: 92rem;
+  
+
+}
+.title {
+  width: 100%;
+  & .h2 {
+    display: flex;
+    justify-content: flex-start;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    margin: 0;
+  }
+  & .h3 {
+    color: #00c48c;
+    font-size: 1.8rem;
+    margin-top: 0.6rem;
+  }
+}
