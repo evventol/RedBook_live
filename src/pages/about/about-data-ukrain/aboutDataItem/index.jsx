@@ -5,7 +5,7 @@ const AboutDataItem = (props) => {
   return (
     <div className={styles.aboutDataItem}>
       <div className={styles.blockDataItem}>
-        <img className={styles.img} src={props.imgSrc} alt="img"></img>
+        <img src={props.imgSrc} alt="img" />
       </div>
       <span>{props.groupName}</span>
       <span className={styles.span}>{props.amount}</span>
