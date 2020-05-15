@@ -3,13 +3,13 @@ import styles from "./aboutDataItem.module.scss";
 
 const AboutDataItem = ({ imgSrc, groupName, amount, occurrences }) => {
   return (
-    <div className={styles.aboutDataItem}>
-      <div className={styles.blockDataItem}>
+    <div className={styles.group}>
+      <div className={styles.image}>
         <img src={imgSrc} alt="img" />
       </div>
-      <span>{groupName}</span>
-      <span className={styles.span}>{amount}</span>
-      <span>{occurrences}</span>
+      <span className={styles.text}>{groupName}</span>
+      <span className={styles.amount}>{amount}</span>
+      <span className={styles.text}>{occurrences}</span>
     </div>
   );
 };
