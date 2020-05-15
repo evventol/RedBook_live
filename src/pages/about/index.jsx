@@ -10,7 +10,7 @@ export const AboutPage = () => {
     <div className={styles.container}>
       <AboutTitle />
       <AboutMap />
-      <AboutDataUkrain aboutDataUkrain={aboutConfig.group} />
+      <AboutDataUkrain />
     </div>
   );
 };
