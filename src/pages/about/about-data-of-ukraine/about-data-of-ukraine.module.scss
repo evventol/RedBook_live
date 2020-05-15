@@ -1,0 +1,16 @@
+.block {
+    width: 100%;
+    margin-bottom: 4rem;
+  
+    & .title {
+      font-weight: bold;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+  
+    & .description {
+      font-size: 1.8rem;
+      color: #00c48c;
+      margin-bottom: 1rem;
+    }
+  }
