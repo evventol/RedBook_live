@@ -6,6 +6,7 @@ import { AboutBlock } from "../about-block";
 
 
 export const AboutDataUkrain = () => {
+  
 
   const aboutDataUkrain = () =>(
   aboutConfig.groups.map((el) => <AboutDataItem {...el} />
