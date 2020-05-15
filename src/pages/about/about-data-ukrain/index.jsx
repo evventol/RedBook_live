@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./aboutDataUkrain.module.scss";
-import { aboutConfig } from "../aboutDataUkrain.config";
+import { aboutConfig } from "../aboutDataUkrain.config.js";
 import AboutDataItem from "./aboutDataItem";
 import { AboutBlock } from "../about-block";
 
@@ -8,13 +8,7 @@ import { AboutBlock } from "../about-block";
 export const AboutDataUkrain = () => {
 
   const aboutDataUkrain = () =>(
-  aboutConfig.groups.map((el) => (
-    <AboutDataItem
-      imgSrc={el.imgSrc}
-      amount={el.amount}
-      occurrences={el.occurrences}
-      groupName={el.groupName}
-    />)
+  aboutConfig.groups.map((el) => <AboutDataItem {...el} />
   ));
 
   return (
