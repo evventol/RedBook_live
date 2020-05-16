@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./aboutDataItem.module.scss";
+import styles from "./about-dataItem.module.scss";
 
 const AboutDataItem = ({ imgSrc, groupName, amount, occurrences }) => {
   return (
