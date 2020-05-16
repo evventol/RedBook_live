@@ -2,6 +2,8 @@ import React from "react";
 import styles from "./about.module.scss";
 import { AboutTitle } from "./about-title";
 import { AboutMap } from "./about-map";
+import { AboutDataUkrain } from "./about-data-ukrain";
+import { AboutDataCountres } from "./about-data-countres";
 
 export const AboutPage = () => {
   return (
@@ -9,6 +11,8 @@ export const AboutPage = () => {
       <div className={styles.content}>
         <AboutTitle />
         <AboutMap />
+        <AboutDataUkrain />
+        <AboutDataCountres />
       </div>
     </div>
   );
