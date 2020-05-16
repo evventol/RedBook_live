@@ -1,11 +1,11 @@
-import React from 'react'
-import styles from '../aside.module.scss'
-import InputCheckbox from '../../sidebar/inputCheckbox'
+import React from "react";
+import styles from "../aside.module.scss";
+import InputCheckbox from "../../sidebar/inputCheckbox";
 
 const BaseLayers = (props) => {
   let baseLayersCheckbox = props.baseLayersData.map((input) => (
     <InputCheckbox id={input.id} htmlFor={input.htmlFor} title={input.title} />
-  ))
+  ));
 
   return (
     <>
@@ -13,7 +13,7 @@ const BaseLayers = (props) => {
       {baseLayersCheckbox}
       <p>більше...</p>
     </>
-  )
-}
+  );
+};
 
-export default BaseLayers
+export default BaseLayers;

@@ -65,7 +65,7 @@ const SelectDataRegister = () => {
     <>
       <div className={styles.dataRegister}>
         <h2 className={styles.h2} onClick={toggleFIeldset}>
-          Дата реєстрації{' '}
+          Дата реєстрації
         </h2>
         {isShown && (
           <>

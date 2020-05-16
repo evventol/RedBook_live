@@ -1,6 +1,6 @@
-import React, {useState} from 'react'
-import styles from '../sidebar.module.scss'
-import InputCheckbox from '../inputCheckbox'
+import React, { useState } from "react";
+import styles from "../sidebar.module.scss";
+import InputCheckbox from "../inputCheckbox";
 
 const PositioningError = (props) => {
   const [isShown, setIsShown] = useState(false);
@@ -8,16 +8,16 @@ const PositioningError = (props) => {
   const toggleFIeldset = () => setIsShown(!isShown);
   let positioningErrorCheckbox = props.positioningErrorData.map((input) => (
     <InputCheckbox id={input.id} htmlFor={input.htmlFor} title={input.title} />
-  ))
+  ));
   return (
     <div className={styles.dataRegister}>
-      <h2 className={styles.h2} onClick={toggleFIeldset}>Похибка позиціювання</h2>
+      <h2 className={styles.h2} onClick={toggleFIeldset}>
+        Похибка позиціювання
+      </h2>
 
-      {isShown &&
-      positioningErrorCheckbox}
-
+      {isShown && positioningErrorCheckbox}
     </div>
-  )
-}
+  );
+};
 
-export default PositioningError
+export default PositioningError;

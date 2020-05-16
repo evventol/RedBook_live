@@ -1,23 +1,62 @@
-@import '../app.scss';
+@import "../app.scss";
 
 .sidebar {
-  position: relative;
-  padding: 2rem 3rem;
-  position: relative;
+  position: absolute;
+  min-width: max-content;
   height: 100%;
-  border-right: 0.1rem solid #E0E0E0;
-  overflow-y: auto;
+  border-right: 0.1rem solid #e0e0e0;
   transform: translateX(-100%);
-  display: none;
+  transition: all 0.3s;
+  background-color: white;
+  z-index: 0;
 
   &.opened {
     transform: translateX(0%);
   }
+
+  & .toggler {
+    position: absolute;
+    right: -2rem;
+    top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 4.5rem;
+    border-top-right-radius: 0.8rem;
+    border-bottom-right-radius: 0.8rem;
+    outline: none;
+    border: 0.1rem solid #e0e0e0;
+    background-color: white;
+    border-left: none;
+    transition: all 0.2s;
+
+    &:hover {
+      right: -2.5rem;
+      width: 2.5rem;
+    }
+
+    & .arrow {
+      transform: rotate(180deg);
+      transition: all 0.2s;
+
+      &.closed {
+        transform: rotate(0deg);
+      }
+    }
+  }
+
+  & .content {
+    padding: 2rem 3rem;
+    min-width: max-content;
+    height: 100%;
+    overflow-y: auto;
+  }
 }
 
 .h2 {
-  padding: .9rem 0;
-  border-bottom: .1rem solid #e0e0e0;
+  padding: 0.9rem 0;
+  border-bottom: 0.1rem solid #e0e0e0;
   margin: 0;
   position: relative;
   font-weight: normal;
@@ -25,11 +64,11 @@
 }
 .h2:after {
   display: inline-block;
-  content: '';
+  content: "";
   margin-right: 1rem;
-  border-right: .6rem solid transparent;
-  border-left: .6rem solid transparent;
-  border-top: .8rem solid $color-main;
+  border-right: 0.6rem solid transparent;
+  border-left: 0.6rem solid transparent;
+  border-top: 0.8rem solid $color-main;
   position: absolute;
   right: 0;
   bottom: 1.5rem;
@@ -39,19 +78,19 @@
   border: none;
   padding-left: 0;
   padding-right: 0;
-  border-bottom: .1rem solid #e0e0e0;
+  border-bottom: 0.1rem solid #e0e0e0;
 
   & .legend {
     padding-top: 1.4rem;
   }
   & .legend:before {
     display: inline-flex;
-    content: '';
-    width: .7rem;
-    height: .7rem;
+    content: "";
+    width: 0.7rem;
+    height: 0.7rem;
     margin-right: 1rem;
-    border-right: .2rem solid $color-main;
-    border-top: .2rem solid $color-main;
+    border-right: 0.2rem solid $color-main;
+    border-top: 0.2rem solid $color-main;
     transform: rotate(45deg);
   }
 }
@@ -68,13 +107,13 @@
   user-select: none;
 }
 .inputCheckbox + .labelCheckbox:before {
-  content: '';
+  content: "";
   display: inline-block;
   width: 1.3rem;
   height: 1.3rem;
-  border: .2rem solid $color-main;
+  border: 0.2rem solid $color-main;
   margin-right: 1.4rem;
 }
 .inputCheckbox:checked + .labelCheckbox:before {
-  background: url('../../img/checked_icon.svg') no-repeat center;
+  background: url("../../img/checked_icon.svg") no-repeat center;
 }

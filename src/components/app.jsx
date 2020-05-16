@@ -1,24 +1,31 @@
-import React from 'react'
-import './app.scss'
-import { Header } from './header'
-import Sidebar from './sidebar'
-import Aside from './aside'
-import './app.scss'
-import { Footer } from './footer'
-import ProjectPage from '../pages/project'
+import React from "react";
+import "./app.scss";
+import { Header } from "./header";
+import Sidebar from "./sidebar";
+// import Aside from './aside'
+import "./app.scss";
+import { Footer } from "./footer";
+import { MainRouter } from "./main-router";
 
-const App = () => {
+const App = (props) => {
   return (
     <div className="App">
       <Header />
       <main className="main">
         <Sidebar />
-        <ProjectPage/>
-        {/* <Aside /> */}
+
+        {/* <Aside
+          baseLayersData={props.state.aside.baseLayersData}
+          biodiversityData={props.state.aside.biodiversityData}
+          openSpatialBasesData={props.state.aside.openSpatialBasesData}
+        /> */}
+        <div className="content">
+          <MainRouter />
+        </div>
       </main>
       <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;

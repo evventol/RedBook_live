@@ -1,5 +1,5 @@
-import React from 'react'
-import styles from '../../aside/aside.module.scss'
+import React from "react";
+import styles from "../../aside/aside.module.scss";
 
 const InputCheckbox = (props) => {
   return (
@@ -14,7 +14,7 @@ const InputCheckbox = (props) => {
         {props.title}
       </label>
     </p>
-  )
-}
+  );
+};
 
-export default InputCheckbox
+export default InputCheckbox;

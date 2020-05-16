@@ -15,7 +15,7 @@ const Aside = () => {
 
       <OpenSpatialBases openSpatialBasesData={asideConfig.openSpatialBasesData} />
     </aside>
-  )
-}
+  );
+};
 
-export default Aside
+export default Aside;

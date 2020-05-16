@@ -1,16 +1,16 @@
-@import '../../app.scss';
-@import '../sidebar.module.scss';
+@import "../../app.scss";
+@import "../sidebar.module.scss";
 
 .h2 {
   margin-top: 1rem;
 }
 .fieldset {
-    display: none;
+  display: none;
   .legendTaxon {
     padding-top: 0;
   }
 }
 
-.fieldsetActive{
-    display: block;
+.fieldsetActive {
+  display: block;
 }
