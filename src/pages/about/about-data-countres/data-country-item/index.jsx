@@ -7,7 +7,7 @@ export const DataCountryItem = ({ country, amount, rectangle }) => {
     <div className={styles.country__row}>
       <div className={styles.country}>{country}</div>
       <div className={styles.amount}>{amount}</div>
-      <img className={styles.rectangle} src={rectangle} />
+      <img className={styles.rectangle} src={rectangle} alt="img" />
     </div>
   );
 };

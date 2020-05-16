@@ -19,9 +19,9 @@ export const AboutDataCountres = () => {
         <div className={styles.header}>
             <div className={styles.title}>Опубліковані дані інших країн</div>
             <div className={styles.nav}>
-                <img className={styles.nav__item} src={pieChartIcon} />
-                <img className={styles.nav__item} src={pieChart} />
-                <img className={styles.nav__item} src={barChart} />
+                <img className={styles.nav__item} src={pieChartIcon} alt="img" />
+                <img className={styles.nav__item} src={pieChart} alt="img" />
+                <img className={styles.nav__item} src={barChart} alt="img"/>
             </div>
         </div>
 
