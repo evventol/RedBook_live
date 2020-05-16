@@ -8,7 +8,8 @@
   border-right: 0.1rem solid #E0E0E0;
   overflow-y: auto;
   transform: translateX(-100%);
-  
+  display: none;
+
   &.opened {
     transform: translateX(0%);
   }

@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,600;1,400&display=swap');
+
+.container {
+  font-size: 1.8rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.article {
+  display: flex;
+  justify-content: space-between;
+  & .blockText {
+    max-width: 55%;
+    padding-right: 2rem;
+  }
+  & .h3 {
+    font-family: 'Prompt', sans-serif;
+    font-size: 2.3rem;
+  }
+  .paragraph {
+    line-height: 2.4rem;
+  }
+  & .li {
+    color: #7ddfc3;
+    & .span {
+      color: #4f4f4f;
+    }
+  }
+}
+.bolt {
+  font-weight: 600;
+}

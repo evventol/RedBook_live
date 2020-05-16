@@ -5,6 +5,7 @@ import Sidebar from './sidebar'
 import Aside from './aside'
 import './app.scss'
 import { Footer } from './footer'
+import ProjectPage from '../pages/project'
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
       <Header />
       <main className="main">
         <Sidebar />
+        <ProjectPage/>
         {/* <Aside /> */}
       </main>
       <Footer />
