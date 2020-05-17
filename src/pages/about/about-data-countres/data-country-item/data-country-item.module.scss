@@ -1,0 +1,23 @@
+.country__row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 5rem;
+  box-shadow: 0 0.1rem 0 rgba(0, 0, 0, 0.08);
+  & .country {
+    width: 20rem;
+    margin-left: 2rem;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+    color: #000000;
+  }
+  & .amount {
+    width: 15rem;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+    margin-left: 4rem;
+    font-weight: bold;
+  }
+
+}
+
