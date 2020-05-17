@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,600;1,400&display=swap");
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+
+  & .content {
+    max-width: 110rem;
+    color: #4f4f4f;
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+.article {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+}
+
+.blockText {
+  padding-right: 2rem;
+  padding-top: 7rem;
+  position: relative;
+
+  & .h3 {
+    font-family: "Prompt", sans-serif;
+    font-size: 2.3rem;
+    color: #00c48c;
+  }
+  & .ul {
+    padding-left: 2rem;
+    margin-bottom: 0;
+    & .li {
+      color: #7ddfc3;
+      margin-bottom: 1.2rem;
+      & .span {
+        color: #4f4f4f;
+      }
+
+    }
+
+
+  }
+  & .ul .li:last-child{
+    margin-bottom: 0;
+  }
+
+  & .more {
+    display: inline-flex;
+    color: #7ddfc3;
+    position: relative;
+    margin: 0;
+    font-size: 14px;
+  }
+  & .more:before {
+    position: absolute;
+    content: "";
+    width: 0.4rem;
+    height: 0.4rem;
+    border-right: 0.2rem solid #7ddfc3;
+    border-top: 0.2rem solid #7ddfc3;
+    transform: rotate(135deg);
+    right: -1.1rem;
+    top: 0.9rem;
+  }
+}
+.blockText:before {
+  position: absolute;
+  content: "";
+  width: 15rem;
+  height: 12.4rem;
+  background: url("../../img/project/smallList.svg") center;
+  left: 20rem;
+  top: 0;
+}
+.blockImg {
+  width: 50%;
+  height: 100%;
+}
+.field {
+  padding-right: 27rem;
+  position: relative;
+}
+.field:before {
+  position: absolute;
+  content: "";
+  width: 22.4rem;
+  height: 30.7rem;
+  background: url("../../img/project/bigList.svg") center;
+  right: 0;
+  top: 0;
+}
+
+.bolt {
+  font-weight: 600;
+  color: #00c48c;
+}

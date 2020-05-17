@@ -1,14 +1,15 @@
-import React, { useState } from "react";
-import styles from "./sidebar.module.scss";
-import Search from "./search";
-import SelectTaxon from "./selectTaxon";
-import SelectRegion from "./selectRegion";
-import SelectOTG from "./selectOTG";
-import SelectDataRegister from "./selectDateRegister";
-import PositioningError from "./positioningError";
-import arrow from "../../img/sidebar_arrow.svg";
+import React, { useState } from 'react'
+import styles from './sidebar.module.scss'
+import Search from './search'
+import SelectTaxon from './selectTaxon'
+import SelectRegion from './selectRegion'
+import SelectOTG from './selectOTG'
+import SelectDataRegister from './selectDateRegister'
+import PositioningError from './positioningError'
+import {sidebarConfig} from './sidebar.config'
+import arrow from '../../img/sidebar_arrow.svg'
 
-export default function Sidebar(props) {
+export default function Sidebar() {
   const [isOpened, toggleSidebar] = useState(false);
 
   return (
@@ -22,12 +23,12 @@ export default function Sidebar(props) {
       </div>
       <div className={styles.content}>
         <Search />
-        <SelectTaxon selectTaxonData={props.selectTaxonData} />
+        <SelectTaxon selectTaxonData={sidebarConfig.selectTaxonData} />
         <SelectRegion />
         <SelectOTG />
         <SelectDataRegister />
-        <PositioningError positioningErrorData={props.positioningErrorData} />
-      </div>
+        <PositioningError positioningErrorData={sidebarConfig.positioningErrorData} />
     </div>
-  );
+    </div>
+  )
 }

@@ -2,6 +2,7 @@ import React from "react";
 import { Switch, Route, Redirect } from "react-router-dom";
 import { routes } from "../../constants/routes/routes";
 import { AboutPage } from "../../pages/about";
+import ProjectPage from '../../pages/project'
 
 export const MainRouter = () => {
   return (
@@ -12,7 +13,8 @@ export const MainRouter = () => {
           <AboutPage />
         </Route>
         <Route path={routes.project}>
-          <div>Projects</div>
+        <ProjectPage/>
+
         </Route>
         <Route path={routes.organisations}>
           <div>Organisations</div>

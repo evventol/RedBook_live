@@ -3,7 +3,7 @@ import styles from "../sidebar.module.scss";
 import InputCheckbox from "../inputCheckbox";
 
 const PositioningError = (props) => {
-  const [isShown, setIsShown] = useState(true);
+  const [isShown, setIsShown] = useState(false);
 
   const toggleFIeldset = () => setIsShown(!isShown);
   let positioningErrorCheckbox = props.positioningErrorData.map((input) => (

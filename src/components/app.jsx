@@ -12,10 +12,8 @@ const App = (props) => {
     <div className="App">
       <Header />
       <main className="main">
-        <Sidebar
-          selectTaxonData={props.state.sidebar.selectTaxonData}
-          positioningErrorData={props.state.sidebar.positioningErrorData}
-        />
+        <Sidebar />
+
         {/* <Aside
           baseLayersData={props.state.aside.baseLayersData}
           biodiversityData={props.state.aside.biodiversityData}
