@@ -46,7 +46,7 @@ export const aboutCountresConfig = {
       rectangle: forDE,
     },
     {
-      country: "Польша",
+      country: "Польща",
       amount: "7,209",
       rectangle: forPL,
     },
