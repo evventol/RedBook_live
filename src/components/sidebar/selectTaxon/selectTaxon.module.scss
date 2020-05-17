@@ -1,72 +1,16 @@
-@import '../../app.scss';
+@import "../../app.scss";
+@import "../sidebar.module.scss";
+
 .h2 {
-  padding: 20px 20px 20px 0;
-  border-bottom: 1px solid #e0e0e0;
-  margin: 0;
-  position: relative;
-  font-weight: normal;
-  font-size: 16px;
-}
-.h2:after {
-  display: inline-block;
-  content: '';
-  margin-right: 10px;
-  border-right: 8px solid transparent;
-  border-left: 8px solid transparent;
-  border-top: 10px solid $color-main;
-  position: absolute;
-  right: 0;
-  bottom: 23px;
+  margin-top: 1rem;
 }
 .fieldset {
-  border: none;
-  padding-left: 0;
-  font-size: 16px;
-  border-bottom: 1px solid #e0e0e0;
-
-  & .legend {
-    padding-top: 14px;
+  display: none;
+  .legendTaxon {
+    padding-top: 0;
   }
-  & .legend:before {
-    display: inline-block;
-    content: '';
-    width: 7px;
-    height: 7px;
-    margin-right: 10px;
-    border-right: 2px solid $color-main;
-    border-top: 2px solid $color-main;
-    transform: rotate(45deg);
-  }
-
-  & .label {
-    font-size: 14px;
-    line-height: 18px;
-    color: #4f4f4f;
-  }
-
 }
-.taxon {
-  font-size: 16px;
 
-  & .input {
-    position: absolute;
-    z-index: -1;
-    opacity: 0;
-  }
-  & .input + .label {
-    display: inline-flex;
-    align-items: center;
-    user-select: none;
-  }
-  & .input + .label:before {
-    content: '';
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    border: 2px solid $color-main;
-    margin-right: 0.5em;
-  }
-  .input:checked + label:before {
-    background: url('../../../img/arrow_icon.jpg') no-repeat center;
-  }
+.fieldsetActive {
+  display: block;
 }

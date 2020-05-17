@@ -1,11 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@100;500;600&display=swap");
+
 .header {
+  height: 6rem;
   font-size: 2rem;
-  padding: 2.5rem;
-  background: #EEEEEE;
-  box-shadow: 0rem 0.5rem 1rem rgba(0, 0, 0, 0.25);
+  background: #ffffff;
+  box-shadow: 0 0.1rem 0.7rem rgba(0, 0, 0, 0.12);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 1;
 
   & .name {
-    color: #CF202E;
-    font-weight: bold;
+    font-family: "Prompt", sans-serif;
+    font-size: 2.34rem;
+    line-height: 3rem;
+    color: #00c48c;
+    & .name__red {
+      font-family: "Prompt", sans-serif;
+      font-size: 2.34rem;
+      line-height: 3rem;
+      color: #cf4223;
+    }
+  }
+  & .navigation {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    & .change__lang {
+      position: absolute;
+      margin: 0;
+      padding: 0.5rem 0 0.5rem 0;
+      height: 16rem;
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+      background: #ffffff;
+      box-shadow: 0 0.1rem 0.8rem rgba(0, 0, 0, 0.08);
+      border-radius: 0.8rem;
+      & .language {
+        list-style-type: none;
+        width: 8rem;
+        & .flag {
+          height: 0.7rem;
+          width: 1.8rem;
+          margin-right: 1rem;
+        }
+        & .tab {
+          font-family: "PT Sans", sans-serif;
+          font-size: 1.6rem;
+          line-height: 2.1rem;
+          text-transform: uppercase;
+          color: #000000;
+        }
+      }
+    }
   }
 }

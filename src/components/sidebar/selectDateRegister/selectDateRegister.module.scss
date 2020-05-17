@@ -1,0 +1,30 @@
+@import "../sidebar.module.scss";
+
+.dataRegister {
+  border-bottom: 0.1rem solid #e0e0e0;
+}
+.countYear {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin: 2rem 0;
+  & .span {
+    width: 11rem;
+    height: 3.9rem;
+    border: 0.1rem solid #e0e0e0;
+    padding: 0.9rem 0;
+    font-size: 1.5rem;
+    color: #4f4f4f;
+    position: relative;
+  }
+  & .countYearStart:after {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 1.8rem;
+    height: 0.1rem;
+    background-color: #e0e0e0;
+    right: -40%;
+    bottom: 1.9rem;
+  }
+}

@@ -1,0 +1,56 @@
+.footer {
+  background: #00c48c;
+  min-width: max-content;
+  padding: 0% 15%;
+  height: 9rem;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  color: white;
+
+  & .title {
+    font-family: "Prompt", sans-serif;
+    font-weight: bold;
+    font-size: 2.4rem;
+  }
+
+  & .tabs {
+    display: flex;
+    flex-flow: row nowrap;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    & .tab {
+      margin-left: 2rem;
+    }
+  }
+
+  & .links {
+    display: flex;
+    align-items: center;
+
+    & .link {
+      margin-left: 2rem;
+      width: 3.4rem;
+      height: 3.4rem;
+    }
+  }
+
+  & div {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    &:nth-child(2) {
+      margin-top: 1.2rem;
+      justify-content: flex-start;
+
+      & .text {
+        font-size: 1.2rem;
+        margin-left: 0.8rem;
+      }
+    }
+  }
+}

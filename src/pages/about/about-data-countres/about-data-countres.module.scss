@@ -1,0 +1,43 @@
+.container {
+    width: 100%;
+    margin-bottom: 4rem;
+    display: flex;
+    flex-flow: column nowrap;
+    & .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+        & .title {
+            font-weight: bold;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            
+        }
+        & .nav {
+            & .nav__item {
+            margin: 0 0.5rem;
+            }
+        }
+    }
+
+    & .content {
+        box-shadow: 0 0 0.8rem  rgba(0, 0, 0, 0.08);
+
+        & .title__columns {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            height: 5rem;
+            box-shadow: 0 0.1rem 0 rgba(0, 0, 0, 0.08);
+
+            & .title {
+                width: 20rem;
+                margin-left: 2rem;
+                font-size: 1.4rem;
+                line-height: 1.8rem;
+                color: #000000;
+            }
+        }
+    }
+}
