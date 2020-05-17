@@ -2,11 +2,13 @@
   background: #00c48c;
   min-width: max-content;
   padding: 0% 15%;
-  height: 9rem;
+  height: 11rem;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   color: white;
+  box-shadow: -0.3rem -0.3rem 0.8rem rgba(0, 0, 0, 0.15);
+  z-index: 2;
 
   & .title {
     font-family: "Prompt", sans-serif;
@@ -46,10 +48,22 @@
     &:nth-child(2) {
       margin-top: 1.2rem;
       justify-content: flex-start;
+      display: flex;
+      align-items: center;
+      flex-flow: row;
 
       & .text {
         font-size: 1.2rem;
         margin-left: 0.8rem;
+      }
+
+      & div {
+        margin-top: 0;
+        height: 2.8rem;
+        flex: 1;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
       }
     }
   }
