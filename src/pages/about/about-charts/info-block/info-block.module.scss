@@ -1,0 +1,71 @@
+.container {
+  flex: 1;
+  padding: 2rem;
+  box-shadow: 0rem 0.1rem 0.8rem rgba(0, 0, 0, 0.08);
+
+  & .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2.4rem;
+    height: 2.8rem;
+  }
+
+  & .info {
+    display: flex;
+    justify-content: space-between;
+
+    & .list {
+      flex: 1;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+
+      & .listTitle {
+        font-weight: bold;
+        font-size: 1.6rem;
+      }
+
+      & .row {
+        display: flex;
+        align-items: c;
+        margin-top: 1.6rem;
+
+        & .dot {
+          width: 2rem;
+          height: 2rem;
+          border-radius: 50%;
+        }
+
+        & .percentage {
+          font-weight: bold;
+        }
+
+        & span {
+          margin-right: 1rem;
+          font-size: 1.4rem;
+          display: inline-block;
+        }
+      }
+    }
+
+    & .img {
+      flex: 1;
+      display: inline-block;
+      height: 25rem;
+    }
+  }
+
+  & .additionalInfo {
+    font-size: 1.2rem;
+    margin-top: 3rem;
+  }
+
+  &:first-child {
+    margin-right: 1rem;
+  }
+
+  &:last-child {
+    margin-left: 1rem;
+  }
+}

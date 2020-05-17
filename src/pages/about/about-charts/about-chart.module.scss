@@ -1,0 +1,45 @@
+@mixin titleSpan($color, $bgColor) {
+  color: $color;
+  background-color: $bgColor;
+  padding: 0.7rem;
+  border-radius: 0.4rem;
+  outline: none;
+}
+
+.infoBlocksContainer {
+  display: flex;
+  flex-flow: row nowrap;
+  margin-bottom: 4rem;
+}
+
+.specialTitleComponent {
+  & .icon {
+    padding: 0 0.5rem;
+  }
+}
+
+.montlyTitleComponent {
+  & :first-child {
+    @include titleSpan(black, transparent);
+  }
+
+  & :last-child {
+    @include titleSpan(white, #7ddfc3);
+  }
+}
+
+.blockInfoContainer {
+  padding: 2rem;
+  padding-bottom: 6rem;
+  box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.08);
+
+  & .title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0.6rem;
+  }
+
+  & .description {
+    font-size: 1.8rem;
+  }
+}
