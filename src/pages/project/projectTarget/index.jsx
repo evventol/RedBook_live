@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "../project.module.scss";
+import img from '../../../img/project/mainImg.jpg'
 
 export const ProjectTarget = () => {
 
@@ -34,7 +35,7 @@ export const ProjectTarget = () => {
         <p className={styles.more}>детальніше</p>
       </div>
       <div className={styles.blockImg}>
-        <img src="./../../../img/project/mainImg.jpg" alt="main-img" />
+        <img src={img}></img>
       </div>
     </article>
   );
