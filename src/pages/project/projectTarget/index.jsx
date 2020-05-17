@@ -1,11 +1,7 @@
-import React from 'react'
-import styles from '../project.module.scss'
-//import { projectConfig } from '../project.config'
+import React from "react";
+import styles from "../project.module.scss";
 
 export const ProjectTarget = () => {
-  const projectList = () => {
-    // projectConfig.blockTarget.list.map((li) => (<li>li.list</li>))
-  }
 
   return (
     <article className={styles.article}>
@@ -16,11 +12,11 @@ export const ProjectTarget = () => {
           зручного вивчення даних з біорізноманіття з GBIF DB. Пошук, фільтри,
           перегляд ітп.
         </p>
-        <ul>
+        <ul className={styles.ul}>
           <li className={styles.li}>
             <span className={styles.span}>
               Перегляд всіх даних GBIF по Україні або іншій країні
-            </span>{' '}
+            </span>
           </li>
           <li className={styles.li}>
             <span className={styles.span}>
@@ -28,11 +24,18 @@ export const ProjectTarget = () => {
               статус, просторова фільтрація
             </span>
           </li>
-        </ul>
+          <li className={styles.li}>
+            <span className={styles.span}>
+              Система для зручного вивчення статистики даних (у вигляді
+              графіків, діаграм, дашборда) про поширення біологічних видів.
+            </span>
+          </li>
+        </ul >
+        <p className={styles.more}>детальніше</p>
       </div>
       <div className={styles.blockImg}>
-        <img src="../../../img/project/projectTarget.jpg" alt="dragonfly" />
+        <img src="./../../../img/project/mainImg.jpg" alt="main-img" />
       </div>
     </article>
-  )
-}
+  );
+};
