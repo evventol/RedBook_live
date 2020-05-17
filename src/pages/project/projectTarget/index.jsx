@@ -1,9 +1,8 @@
 import React from "react";
 import styles from "../project.module.scss";
-import img from '../../../img/project/mainImg.jpg'
+import img from "../../../img/project/mainImg.jpg";
 
 export const ProjectTarget = () => {
-
   return (
     <article className={styles.article}>
       <div className={styles.blockText}>
@@ -31,11 +30,11 @@ export const ProjectTarget = () => {
               графіків, діаграм, дашборда) про поширення біологічних видів.
             </span>
           </li>
-        </ul >
+        </ul>
         <p className={styles.more}>детальніше</p>
       </div>
       <div className={styles.blockImg}>
-        <img src={img}></img>
+        <img src={img} alt="img"></img>
       </div>
     </article>
   );

@@ -7,17 +7,15 @@ export const AboutTitle = () => {
       <span className={styles.title}>Ukraine</span>
       <div className={styles.content}>
         <p className={styles.block}>
-          This report provides a series of summary charts, statistics and other
-          details about the mobilization and use of open-access species data
-          through the GBIF network, relating to users and participating
-          institutions in Ukraine. These metrics show status at the time of
-          report generation, unless otherwise noted.
+          Цей доклад надає серію графіків, даних та інших деталей щодо
+          використання даних з відкритим доступом за допомогою мережі GBIF, яка
+          може бути корисна юзерам та зацікавленим організаціям. Ці метрики
+          вказують стан на час генерації докладу.
         </p>
         <p className={styles.block}>
-          Taken together, the elements of this report can help guide and measure
-          progress toward the information needs for biodiversity research, as
-          well as for national commitments on biodiversity and sustainable
-          development.
+          Складові докладу можуть полегшити збір та обробку інформації для
+          досліджувань біорізноманіття, а також міжнародним домовленностям щодо
+          нього.
         </p>
       </div>
     </div>
