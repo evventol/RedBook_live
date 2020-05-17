@@ -2,7 +2,8 @@ import React from "react";
 import { Switch, Route, Redirect } from "react-router-dom";
 import { routes } from "../../constants/routes/routes";
 import { AboutPage } from "../../pages/about";
-import ProjectPage from '../../pages/project'
+import ProjectPage from "../../pages/project";
+import { UnderConstruction } from "../under-construction";
 
 export const MainRouter = () => {
   return (
@@ -13,17 +14,16 @@ export const MainRouter = () => {
           <AboutPage />
         </Route>
         <Route path={routes.project}>
-        <ProjectPage/>
-
+          <ProjectPage />
         </Route>
         <Route path={routes.organisations}>
-          <div>Organisations</div>
+          <UnderConstruction />
         </Route>
         <Route path={routes.places}>
-          <div>Places</div>
+          <UnderConstruction />
         </Route>
         <Route path={routes.contacts}>
-          <div>Contacts</div>
+          <UnderConstruction />
         </Route>
       </Switch>
     </React.Fragment>
